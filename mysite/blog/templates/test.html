@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+
+    this is static blog page.
+
+</title>
+
+
+</head>
+
+
+<body>
+<div class="blog">
+    <table>
+        {% for i in blogdb %}
+        <tr>
+            <td>
+              {{ value.author|title }}
+            </td>
+            <td>
+                {{ value.text }}
+            </td>
+            <td>
+                {{ value.title|capfirst }}
+            </td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</div>
+</body>
+
+
+
+
+
+
+
+</html>
